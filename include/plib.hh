@@ -1,7 +1,7 @@
 #pragma once
 
 #include <algorithm>
-#include <experimental/filesystem>
+#include <filesystem>
 #include <iostream>
 #include <stdexcept>
 #include <string>
@@ -12,7 +12,7 @@
 #include "watcher.hh"
 
 namespace plib {
-namespace fs = std::experimental::filesystem;
+namespace fs = std::filesystem;
 
 /* Return a path object for /proc */
 fs::path get_proc_root();

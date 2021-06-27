@@ -4,7 +4,7 @@
 #include <algorithm>
 #include <csignal>
 #include <cstring>  // strerror
-#include <experimental/filesystem>
+#include <filesystem>
 #include <fstream>
 #include <iostream>
 #include <map>
@@ -20,7 +20,7 @@
 #define MAX_PROC_FILE_LEN (2048)
 
 namespace plib {
-namespace fs = std::experimental::filesystem;
+namespace fs = std::filesystem;
 
 class Process {
  public:
